@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Holy City Mulch Co.</title>
+  <meta name="description" content="Mulch installation & bed cleanups in Charleston — fast quotes, great prices." />
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Georgia, 'Times New Roman', serif; }
+    .fade-enter { opacity: 0; }
+    .fade-enter-active { opacity: 1; transition: opacity 600ms ease; }
+    .fade-exit { opacity: 1; }
+    .fade-exit-active { opacity: 0; transition: opacity 600ms ease; }
+    .img-cover { object-fit: cover; width: 100%; height: 100%; }
+    .glass {
+      backdrop-filter: saturate(140%) blur(8px);
+      background: rgba(0,0,0,0.45);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      border: 1px solid rgba(0,0,0,0.3);
+    }
+    .ratio-16x9 { position: relative; padding-top: 56.25%; }
+    .ratio > *  { position: absolute; inset: 0; }
+    .gradient-fallback {
+      background: linear-gradient(135deg, #064e3b, #065f46, #064e3b);
+      background-size: 200% 200%;
+      animation: gradientShift 12s ease infinite;
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body class="text-slate-800 antialiased">
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3 group" aria-label="Go to top">
+        <div class="w-10 h-10 rounded-xl bg-emerald-900 grid place-items-center text-white font-black">HM</div>
+        <div class="leading-tight">
+          <div class="font-bold tracking-tight">Holy City Mulch Co.</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a class="hover:text-emerald-900" href="#services">Services</a>
+        <a class="hover:text-emerald-900" href="#about">About</a>
+        <a class="hover:text-emerald-900" href="#contact">Contact</a>
+      </nav>
+      <a href="tel:8438704491" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-900 text-white text-sm font-semibold shadow hover:bg-emerald-950" aria-label="Call (843) 870-4491">
+        Call (843) 870-4491
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative">
+    <div class="relative min-h-[72vh] md:min-h-[80vh] flex items-center">
+      <!-- Background -->
+      <div class="absolute inset-0 gradient-fallback" aria-hidden="true"></div>
+      <div class="absolute inset-0 bg-black/40" aria-hidden="true"></div>
+
+      <!-- Content -->
+      <div class="relative z-10 w-full px-4">
+        <div class="glass rounded-2xl max-w-3xl mx-auto p-6 sm:p-10 text-center text-white mt-20 sm:mt-24">
+          <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+            Fresh mulch. Clean edges. Instant curb appeal.
+          </h1>
+          <p class="mt-4 text-base sm:text-lg text-white/90">
+            Mulch installation & bed clean-ups across Charleston, Mount Pleasant, and surrounding areas. Fast quotes, fair prices, zero mess.
+          </p>
+          <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
+            <a id="textQuote" href="#contact" class="px-5 py-3 rounded-xl bg-white text-emerald-900 font-semibold hover:bg-slate-100" aria-label="Text for a quote">Text for a Quote</a>
+            <a href="#contact" class="px-5 py-3 rounded-xl bg-emerald-900 text-white font-semibold hover:bg-emerald-950" aria-label="Jump to contact form">Book an Estimate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust badges / stats -->
+  <section class="bg-white py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-1 gap-6">
+      <div class="p-6 rounded-2xl border border-slate-200 shadow-sm text-center">
+        <div class="text-3xl font-extrabold text-emerald-900">24-48h</div>
+        <div class="text-sm text-slate-600">Typical turnaround</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="bg-slate-50 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Our Services</h2>
+      <p class="text-slate-600 mt-2">No garden care upsells — just clean, professional mulch work.</p>
+
+      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Service 1 -->
+        <article class="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-md transition">
+          <div class="p-5">
+            <h3 class="font-semibold text-lg">Mulch Installation</h3>
+            <p class="text-sm text-slate-600 mt-2">We edge beds, install your preferred mulch type, and leave your property spotless.</p>
+            <details class="mt-3 group">
+              <summary class="cursor-pointer text-sm text-emerald-900 hover:underline">See options</summary>
+              <ul class="text-sm text-slate-600 mt-2 list-disc list-inside">
+                <li>Brown hardwood, pine bark, black dyed</li>
+                <li>Premium long-needle pine straw</li>
+                <li>Pet-safe, kid-safe options available</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- Service 2 -->
+        <article class="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-md transition">
+          <div class="p-5">
+            <h3 class="font-semibold text-lg">Mulch Bed Clean-Up</h3>
+            <p class="text-sm text-slate-600 mt-2">Weeding, redefining bed edges, and a fresh top-off for instant refresh.</p>
+            <details class="mt-3 group">
+              <summary class="cursor-pointer text-sm text-emerald-900 hover:underline">What’s included</summary>
+              <ul class="text-sm text-slate-600 mt-2 list-disc list-inside">
+                <li>Debris removal & haul-off</li>
+                <li>Precision trench edging</li>
+                <li>Fresh mulch layer (1.5–3 in.)</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- Service 3 -->
+        <article class="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-md transition">
+          <div class="p-5">
+            <h3 class="font-semibold text-lg">Commercial & HOA</h3>
+            <p class="text-sm text-slate-600 mt-2">Clean, consistent, on-schedule installs for shared spaces and entrances.</p>
+            <ul class="text-sm text-slate-600 mt-3 list-disc list-inside">
+              <li>After-hours options available</li>
+              <li>Monthly & seasonal refresh programs</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-slate-50 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Charleston roots. Professional results.</h2>
+        <p class="text-slate-700 mt-4 leading-relaxed">We’re a local crew focused on one thing done right: mulch. We’ve helped Lowcountry homeowners and businesses keep beds sharp, soils protected, and landscapes looking like new. No pressure sales, no surprise add-ons — just dependable work and clear communication.</p>
+        <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-900"></span> Fully insured</li>
+          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-900"></span> On-time & tidy</li>
+          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-900"></span> Transparent quotes</li>
+          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-900"></span> Satisfaction guaranteed</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / CTA -->
+  <section id="contact" class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl p-6 sm:p-10 border border-slate-200 bg-slate-50 shadow-sm grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Ready for a fresh layer?</h2>
+          <p class="text-slate-700 mt-3">Tell us your address, approximate bed size, and mulch preference. We’ll get back within 24 hours.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="tel:8438704491" class="px-5 py-3 rounded-xl bg-emerald-900 text-white font-semibold hover:bg-emerald-950" aria-label="Call us">Call</a>
+            <a id="textCTA" href="#contact" class="px-5 py-3 rounded-xl border border-slate-300 font-semibold hover:bg-slate-100" aria-label="Text us">Text</a>
+            <a href="mailto:holycitymulchco@gmail.com" class="px-5 py-3 rounded-xl border border-slate-300 font-semibold hover:bg-slate-100" aria-label="Email us">Email</a>
+          </div>
+        </div>
+        <form id="quoteForm" class="bg-white p-5 rounded-2xl border border-slate-200 grid gap-4" onsubmit="return false;" aria-label="Contact form">
+          <label class="grid text-sm">
+            Name
+            <input id="name" class="mt-1 px-3 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-900" placeholder="Your full name" required />
+          </label>
+          <label class="grid text-sm">
+            Phone
+            <input id="phone" type="tel" class="mt-1 px-3 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-900" placeholder="(843) 555-0123" required />
+          </label>
+          <label class="grid text-sm">
+            Address
+            <input id="address" class="mt-1 px-3 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-900" placeholder="Street, City" />
+          </label>
+          <label class="grid text-sm">
+            Message
+            <textarea id="message" rows="4" class="mt-1 px-3 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-900" placeholder="Bed size & mulch type (if known)"></textarea>
+          </label>
+          <button id="sendBtn" type="submit" class="px-5 py-3 rounded-xl bg-emerald-900 text-white font-semibold hover:bg-emerald-950" aria-label="Send message">Send</button>
+          <p class="text-xs text-slate-500">Prefer texting? Hit the “Text” button — fastest way to reach us.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-slate-900 text-slate-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid sm:grid-cols-2 gap-6 items-center">
+      <div>
+        <div class="text-white font-semibold">Holy City Mulch Co.</div>
+        <div class="text-sm text-slate-400">Charleston, South Carolina</div>
+      </div>
+      <div class="flex justify-start sm:justify-end gap-3">
+        <a class="px-3 py-2 rounded-lg bg-white/10 hover:bg-white/15" href="tel:8438704491" aria-label="Call">Call</a>
+        <a class="px-3 py-2 rounded-lg bg-white/10 hover:bg-white/15" href="#contact" id="footerText" aria-label="Text">Text</a>
+        <a class="px-3 py-2 rounded-lg bg-white/10 hover:bg-white/15" href="#home" aria-label="Back to top">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Ensure smooth scrolling with sticky header offset
+    (function(){
+      const header = document.querySelector('header');
+      const offset = () => (header ? header.offsetHeight + 8 : 0);
+      function scrollToHash(hash){
+        if (!hash || hash === '#') return;
+        const id = hash.replace('#','');
+        const el = document.getElementById(id);
+        if (!el) return;
+        const top = el.getBoundingClientRect().top + window.pageYOffset - offset();
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+      document.querySelectorAll('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click', (e)=>{
+          const hash = a.getAttribute('href');
+          if (!hash || hash === '#') return;
+          const el = document.getElementById(hash.slice(1));
+          if (el){ e.preventDefault(); scrollToHash(hash); history.pushState(null,'',hash); }
+        });
+      });
+      // Correct initial load with hash
+      window.addEventListener('load', ()=>{ if (location.hash) setTimeout(()=>scrollToHash(location.hash), 50); });
+
+      // Text buttons: open SMS on phones, focus form on desktop
+      function openSMSWithFallback(prefillBody=''){
+        const isMobile = /Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
+        const smsURL = `sms:+18438704491?&body=${encodeURIComponent(prefillBody)}`;
+        if (isMobile) {
+          window.location.href = smsURL;
+        } else {
+          scrollToHash('#contact');
+          setTimeout(()=>document.getElementById('message')?.focus(), 300);
+        }
+      }
+      ['textQuote','textCTA','footerText'].forEach(id=>{
+        const btn = document.getElementById(id);
+        if (btn) btn.addEventListener('click', (e)=>{ e.preventDefault(); openSMSWithFallback("Hi! I'd like a mulch estimate."); });
+      });
+
+      // Send button: compose email with form values
+      const form = document.getElementById('quoteForm');
+      const sendBtn = document.getElementById('sendBtn');
+      function composeEmail(){
+        if (!form?.reportValidity?.()) return;
+        const v = id => document.getElementById(id)?.value || '';
+        const subject = encodeURIComponent('Mulch Quote Request');
+        const body = encodeURIComponent(`Name: ${v('name')}
+Phone: ${v('phone')}
+Address: ${v('address')}
+Message: ${v('message')}`);
+        window.location.href = `mailto:holycitymulchco@gmail.com?subject=${subject}&body=${body}`;
+      }
+      sendBtn?.addEventListener('click', composeEmail);
+      form?.addEventListener('submit', (e)=>{ e.preventDefault(); composeEmail(); });
+
+      // Dev console check (non-blocking)
+      try {
+        console.info('[Holy City Mulch] Buttons present', {
+          callLinks: document.querySelectorAll('a[href^="tel:"]').length,
+          textLinks: ['textQuote','textCTA','footerText'].filter(id=>document.getElementById(id)).length,
+          emailLinks: document.querySelectorAll('a[href^="mailto:"]').length,
+          anchors: Array.from(document.querySelectorAll('a[href^="#"]')).map(a=>a.getAttribute('href'))
+        });
+      } catch(_){}
+    })();
+  </script>
+<script>
+    // --- Smooth anchor scrolling with sticky-header offset ---
+    const header = document.querySelector('header');
+    const offset = () => (header ? header.offsetHeight + 8 : 0);
+
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', evt => {
+        const hash = a.getAttribute('href');
+        if (!hash || hash === '#') return;
+        const id = hash.slice(1);
+        const target = document.getElementById(id);
+        if (target) {
+          evt.preventDefault();
+          const top = target.getBoundingClientRect().top + window.pageYOffset - offset();
+          window.scrollTo({ top, behavior: 'smooth' });
+          history.pushState(null, '', hash);
+        }
+      });
+    });
+
+    // --- Make "Text for a Quote" & other Text buttons work everywhere ---
+    function openSMSWithFallback(prefillBody = '') {
+      const isMobile = /Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
+      const smsURL = `sms:+18438704491?&body=${encodeURIComponent(prefillBody)}`;
+      if (isMobile) {
+        window.location.href = smsURL;
+      } else {
+        const target = document.getElementById('contact');
+        if (target) {
+          const top = target.getBoundingClientRect().top + window.pageYOffset - offset();
+          window.scrollTo({ top, behavior: 'smooth' });
+          setTimeout(() => document.getElementById('message')?.focus(), 500);
+        }
+      }
+    }
+
+    document.getElementById('textQuote')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      openSMSWithFallback('Hi! I\'d like a mulch quote.');
+    });
+    document.getElementById('textCTA')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      openSMSWithFallback('Hi! Can we text about a mulch estimate?');
+    });
+    document.getElementById('footerText')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      openSMSWithFallback('Hello from the website.');
+   
